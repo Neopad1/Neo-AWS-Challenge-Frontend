@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Neo Padi Resume</title>
+<style>
+
+
+.web-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  height: 100vh;
+}
+
+.web-count {
+  
+  height: 20px;
+  width: 80px;
+  color: black;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+
+#reset {
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px 20px;
+  color: black;
+  border: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+.header {
+
+  background-image: url("BskyNeo2.jpg");
+  padding: 20px;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+
+.column.side {
+  background-color: #f9f9f9;
+  width: 25%;
+}
+
+
+.column.middle {
+  background-color: #f0f0f0;
+  width: 50%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="header">
+  <h1>Neo Padi Resume</h1>
+  <p></p>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Personal Details</h2>
+    <p>Address: 943 Tshidzumba Street, Meadwolands, 1852<br><br> 
+       Email: neopadi55@gmail.com<br><br> 
+       Mobile no:+27 65 902 7089<br><br>
+       Links: linkedin.com/in/neo-padi-877922122
+    </p>
+  </div>
+  
+  <div class="column middle">
+    <h1>Summary</h1>
+    <p>Motivated and enthusiastic graduate with a passion for IT. Eager to apply knowledge and skills of cloud computingand gain the necessary experience to help achieve company goals.<br> 
+       Four months experience with working in an Agile work environment and a IT test and production environment in the banking industry. 
+       I'm interested increating, deploying, managing,<br> monitoring and securing systems and applications in the cloud. Previously enrolled on the Google Africa Developer Scholarship and gaining Linux command line skills and deploying <br>services to the Google Cloud Platform.</p>
+    <br><br>
+    <h1>Experience</h1>
+    <p>
+       
+           <h4>BankSeta, ICT Intern</h4>
+           <h5>Standard Bank South Africa</h5>
+           <h5>Aug 2018 - Jan 2019 (6 months)</h5>
+       
+       I was responsible for supporting cash deposit machine application and devices across 6 African countries. My role included engaging with the appropriate technical vendor, various IT teams in South Africa and IT teams in African countries to resolve production issues raised against the application.
+    
+<ul>
+<li>Support production cash deposit application based in Windows server
+across six African countries.</li>
+
+<li>Provide updates of assigned user stories in the daily updates meeting.</li>
+
+<li>Execute SQL queries against the database to investigate issues and faults
+within the application in production environment.</li>
+
+<li>Resolve incidents raised against the application within the specified time
+frame agreed with business.</li>
+
+<li>Work closely with the vendor and in house development resources to ensure
+that at all times a good application standard is adhered to.</li>
+
+<li>Monitoring and ensuring that the application is stable across six African
+countries.</li>
+
+<li>Test and ensure that all software originating from the vendor in respect of
+the resolution of faults is error free and complies with the application
+standards.</li>
+</ul>
+</p>
+<p><h4>IT volunteer</h4>
+<h5>Southern African Association of youth clubs</h5>
+<h5>May 2016 - Sep 2016 (5 months)</h5>
+<ul>
+<li>My duties were to provide assistance in all things IT related such as troubleshooting and installationsand printing of documents.</li>
+<li>Conduct End-user training to the learners on how to use application programs offered at the center.</li>
+<li>Educate and train users about a computer and its features and how to operate it.</li>
+<li>Used strong interpersonal communication skills to convey information to others.</li></ul></p>
+<br><br>
+<p>
+<h1>Education</h1>
+<h5>PC Training & Business College</h5>
+<b>Diploma In Information Technology, Information Technology</b><br>
+Feb 2013 - Mar 2015
+<br><br>
+<h1>Licenses & Certifications</h1>
+<b>AWS Certified Cloud Practitioner</b><br>
+Issued Mar 2022 - Expires Mar 2025<br>
+VD2LLB7J3NR4Q593
+<br>
+<br>
+<b>AWS Certified SysOps Administrator – Associate - Amazon Web Services (AWS)</b><br>
+Issued Jun 2021 - Expires Jun 2024<br>
+05FG47NBBJFE1L9B
+<br>
+<br>
+<b>A+ Certified CE - CompTIA</b><br>
+Issued Jul 2017 - Expires Jul 2020<br>
+COMP001021147530
+<br>
+<br>
+<b>Systems Support NQF 5 - MICT SETA</b><br>
+MH00044
+</p>
+  </div>
+  
+  <div class="column side">
+    <h1>Skills</h1>
+    <p></ul><li>Microsoft Office</li>
+       <li>Internet Protocol (IP)</li>
+       <li>Microsoft SQL Server</li>
+       <li>Linux Bash</li>
+       <li>VMware</li>
+       <li>Secure Shell (SSH)</li>
+       <li>Remote Desktop Protocol (RDP)</li>
+       <li>Jira</li>
+       <li>Agile Methodologies</li></ul>
+       </p>
+  </div>
+</div>
+<div>Page views:</div>
+  <div class="web-count"></div>
+<button id="reset">Reset</button>
+<script>
+var counterContainer = document.querySelector(".web-count");
+var resetButton = document.querySelector("#reset");
+var visitCount = localStorage.getItem("page_view");
+
+
+if (visitCount) {
+  visitCount = Number(visitCount) + 1;
+  localStorage.setItem("page_view", visitCount);
+} else {
+  visitCount = 1;
+  localStorage.setItem("page_view", 1);
+}
+counterContainer.innerHTML = visitCount;
+
+
+resetButton.addEventListener("click", () => {
+  visitCount = 1;
+  localStorage.setItem("page_view", 1);
+  counterContainer.innerHTML = visitCount;
+}); 
+</script>  
+</body>
+</html>
